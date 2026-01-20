@@ -2,6 +2,7 @@ import React from 'react'
 interface HeaderComponentProps {
     title: string;
 }
+//header with prop for title
 function HeaderComponent({ title }: HeaderComponentProps) {
     return (
         <div>

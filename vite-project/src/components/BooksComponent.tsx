@@ -1,6 +1,6 @@
 import React from 'react'  
 import "./BooksComponent.css"
-
+//interface for book
    interface BookComponentProps {
     title: string,
     author: string,
@@ -11,7 +11,7 @@ import "./BooksComponent.css"
 
 
 export default function BookComponent({title, author, read, ISBN} : BookComponentProps) {
-
+//book component with props
   return (
     <div>
   <section style= {{boxShadow: "2px 2px 5px"}}>

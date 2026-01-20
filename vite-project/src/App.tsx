@@ -10,6 +10,7 @@ import FooterComponent from './components/FooterComponent.tsx'
 
 function App() {
 
+  //BookArray
   const BookArr = [{
     title: "Lord of the Rings",
     author: "JR. Tolkien",
@@ -42,12 +43,14 @@ function App() {
   }
   ]
 
-  return (
+  return ( //components, main point of app
+    //prop for title
     <> <HeaderComponent title={"My Book App"} />
       <br />
-      {BookArr.map((book) => (
+      {BookArr.map((book) => ( //Map Book array to write out books, using interface and props for books
         <BooksComponent title={book.title} author={book.author} read={book.read} ISBN={book.ISBN} />
       ))}
+    
       <FooterComponent /> 
   </>
   )
