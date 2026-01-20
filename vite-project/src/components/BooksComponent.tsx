@@ -1,4 +1,4 @@
-import React from 'react'  
+ 
 import "./BooksComponent.css"
 //interface for book
    interface BookComponentProps {
