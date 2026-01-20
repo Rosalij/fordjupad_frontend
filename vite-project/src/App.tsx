@@ -12,33 +12,34 @@ function App() {
     title: "Lord of the Rings",
     author: "JR. Tolkien",
     read: true,
-    ISBN: 1231556
+    ISBN: 1231323
   },
   {
-    title: "Lord of the Rings",
-    author: "JR. Tolkien",
-    read: true,
+    title: "Pippi Långstrump",
+    author: "Astrid Lindgren",
+    read: false,
     ISBN: 1231556
   },
   {
     title: "Into The Wild",
-    author: "JR. Tolkien",
+    author: "John Krakauer",
     read: true,
-    ISBN: 1231556
+    ISBN: 12323556
   },
   {
     title: "Harry Potter and the chamber of secrets",
     author: "JK. Rowling",
-    read: true,
-    ISBN: 1231556
+    read: false,
+    ISBN: 1212435556
   },
   {
     title: "The Hunger Games",
     author: "Jennifer Lawrence",
     read: true,
-    ISBN: 1231556
+    ISBN: 1231512556
   }
   ]
+
   return (
     <> <HeaderComponent title={"My Book App"} />
      <br />
@@ -46,11 +47,6 @@ function App() {
         <BooksComponent title={book.title} author={book.author} read={book.read} ISBN={book.ISBN} />
       ))}
 
-     
-      <section>
-
-
-      </section>
     </>) }
 
 
