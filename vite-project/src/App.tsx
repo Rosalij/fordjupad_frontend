@@ -1,9 +1,11 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+
 import './App.css'
 import BooksComponent from './components/BooksComponent.tsx'
 import HeaderComponent from './components/HeaderComponent.tsx'
+import FooterComponent from './components/FooterComponent.tsx'
 
 
 function App() {
@@ -42,12 +44,14 @@ function App() {
 
   return (
     <> <HeaderComponent title={"My Book App"} />
-     <br />
+      <br />
       {BookArr.map((book) => (
         <BooksComponent title={book.title} author={book.author} read={book.read} ISBN={book.ISBN} />
       ))}
+      <FooterComponent /> 
+  </>
+  )
+}
 
-    </>) }
 
-
-  export default App
+export default App
